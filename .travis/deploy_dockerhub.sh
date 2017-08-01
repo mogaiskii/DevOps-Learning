@@ -6,5 +6,5 @@ else
     TAG="$TRAVIS_BRANCH" | tr "[:upper:]" "[:lower:]"
 fi
 
-docker build -f Dockerfile -t $TRAVIS_REPO_SLUG:$TAG . | tr "[:upper:]" "[:lower:]"
-docker push $TRAVIS_REPO_SLUG | tr "[:upper:]" "[:lower:]"
+docker build -f Dockerfile -t "mogaiskii/devopslearning":$TAG .
+docker push "mogaiskii/devopslearning"
